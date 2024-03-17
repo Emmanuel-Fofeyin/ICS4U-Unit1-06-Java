@@ -62,7 +62,7 @@ final class Statistics {
         final double medianValue;
         if (size % 2 == 0) {
             medianValue = (double) (arrayOfIntegers[size / 2 - 1] 
-                + arrayOfIntegers[size / 2]) / 2;
+                            + arrayOfIntegers[size / 2]) / 2;
         } else {
             medianValue = (double) arrayOfIntegers[size / 2];
         }
