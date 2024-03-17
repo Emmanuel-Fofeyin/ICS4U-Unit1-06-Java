@@ -59,11 +59,13 @@ final class Statistics {
     public static double median(final Integer[] arrayOfIntegers) {
         Arrays.sort(arrayOfIntegers);
         final int size = arrayOfIntegers.length;
+        double medianValue;
         if (size % 2 == 0) {
-            return (double) (arrayOfIntegers[size / 2 - 1] + arrayOfIntegers[size / 2]) / 2;
+            medianValue = (double) (arrayOfIntegers[size / 2 - 1] + arrayOfIntegers[size / 2]) / 2;
         } else {
-            return (double) arrayOfIntegers[size / 2];
+            medianValue = (double) arrayOfIntegers[size / 2];
         }
+        return medianValue;
     }
 
     /**
