@@ -29,7 +29,7 @@ final class Statistics {
     * Throw an exception IllegalStateException.
     * if this ever is called
     *
-    * @throws IllegalStateException
+    * @throws IllegalStateException Cannot be instantiated
     *
     */
     private Statistics() {
