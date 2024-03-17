@@ -61,7 +61,7 @@ final class Statistics {
         final int size = arrayOfIntegers.length;
         final double medianValue;
         if (size % 2 == 0) {
-            medianValue = (double) (arrayOfIntegers[size / 2 - 1] 
+            medianValue = (double) (arrayOfIntegers[size / 2 - 1]
                             + arrayOfIntegers[size / 2]) / 2;
         } else {
             medianValue = (double) arrayOfIntegers[size / 2];
