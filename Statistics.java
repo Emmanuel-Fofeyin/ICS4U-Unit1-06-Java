@@ -58,7 +58,7 @@ final class Statistics {
     */
     public static double median(final Integer[] arrayOfIntegers) {
         Arrays.sort(arrayOfIntegers);
-        int size = arrayOfIntegers.length;
+        final int size = arrayOfIntegers.length;
         if (size % 2 == 0) {
             return (double) (arrayOfIntegers[size / 2 - 1] + arrayOfIntegers[size / 2]) / 2;
         } else {
@@ -73,14 +73,14 @@ final class Statistics {
     * @return the mode of the integers
     */
     public static List<Integer> mode(final Integer[] numbers) {
-        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        final Map<Integer, Integer> frequencyMap = new HashMap<>();
         int maxFrequency = 0;
         for (int num : numbers) {
-            int frequency = frequencyMap.getOrDefault(num, 0) + 1;
+            final int frequency = frequencyMap.getOrDefault(num, 0) + 1;
             frequencyMap.put(num, frequency);
             maxFrequency = Math.max(maxFrequency, frequency);
         }
-        List<Integer> modeValues = new ArrayList<>();
+        final List<Integer> modeValues = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
             if (entry.getValue() == maxFrequency) {
                 modeValues.add(entry.getKey());
